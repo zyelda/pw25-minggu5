@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Form Penyewaan - Jejak Pendaki</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="img/logo.png">
+</head>
+<body>
+  <div class="container">
+  
+    <form class="rental-form">
+        <label for="nama">Nama Lengkap</label>
+        <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+      
+        <label for="alamat">Alamat Lengkap</label>
+        <input type="text" id="alamat" name="alamat" placeholder="Masukkan alamat lengkap" required>
+      
+        <label for="nohp">Nomor HP</label>
+        <input type="tel" id="nohp" name="nohp" placeholder="08xxxxxxxxxx" required inputmode="numeric" pattern="[0-9]*" maxlength="13">
+      
+        <label for="ktp">Upload Foto KTP</label>
+        <input type="file" id="ktp" name="ktp" accept="image/*" required>
+      
+        <label for="barang">Pilih Barang</label>
+        <select id="barang">
+          <option value="">-- Pilih Barang --</option>
+          <option value="Tenda 4L">Tenda 4L</option>
+          <option value="Tenda 2L">Tenda 2L</option>
+          <option value="Carrier">Carrier</option>
+          <option value="Sepatu Hiking">Sepatu Hiking</option>
+          <option value="Kursi Lipat">Kursi Lipat</option>
+          <option value="Meja Lipat">Meja Lipat</option>
+          <option value="Sleeping Bag">Sleeping Bag</option>
+          <option value="Kompor">Kompor</option>
+          <option value="Trekking Pole">Trekking Pole</option>
+          <option value="Cooking Set">Cooking Set</option>
+          <option value="Headlamp">Headlamp</option>
+          <option value="Matras">Matras</option>
+        </select>
+
+        <div class="selected-items" id="selected-items"></div>
+        <p class="limit-warning" id="limit-warning" style="display: none;">Maksimal 20 item ya!</p>
+
+        <button type="submit">Kirim</button>
+      </form>
+
+    <div id="item-list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

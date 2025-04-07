@@ -1,0 +1,528 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url('img/background.jpg');
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  max-width: 100%;
+  margin: auto;
+  padding: 1.5rem 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+i.fa-whatsapp {
+  margin-left: 10px;
+}
+
+.nav-logo {
+  max-width: 100px;
+}
+
+.nav-logo img {
+  width: 100px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.link a {
+  position: relative;
+  padding-bottom: 0.75rem;
+  color: #fff;
+}
+
+.link a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #e0dbdb;
+  transition: all 0.3s ease;
+}
+
+.link a:hover::after {
+  width: 80%;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #2545f8;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn a {
+    color: #fff;
+}
+
+.btn:hover {
+  background-color: #1527b1;
+}
+
+.image img {
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 1));
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 5rem 2rem;
+}
+
+header {
+  position: relative;
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+
+header .content h4 {
+  margin-bottom: 1rem;
+  color: #ccc;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+header .content h1 {
+  color: #fff;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 4rem;
+  text-shadow: #2a2727;
+}
+
+header .content h1 span {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #fff;
+}
+
+header .content p {
+  margin-bottom: 2rem;
+  color: #fff;
+  text-shadow: #2a2727;
+}
+
+header .image {
+  position: relative;
+}
+
+header .image img {
+  max-width: 600px;
+  margin: auto;
+}
+
+section .header {
+    margin-bottom: 1rem;
+    color: #fff;
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+section .header h2 {
+  padding-top: 4rem;
+}
+
+.peralatan-outdoor {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+}
+
+.peralatan-outdoor img {
+    max-width: 100%;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.peralatan-outdoor .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(45deg, #2a2727, #1e1650);
+    padding: 0.5rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.peralatan-outdoor .card:hover {
+    background-color: #323232;
+    border-color: #fff;
+}
+
+.peralatan-outdoor .card h4 {
+    margin-top: 0.5rem;
+    color: #fff;
+    font-size: 1rem;
+    align-items: center;
+    font-weight: 600;
+}
+
+.rental-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+
+.rental-table th,
+.rental-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+.rental-table th {
+  background-color: rgba(0, 35, 122, 0.6);
+  color: white;
+  font-weight: bold;
+}
+
+.rental-table tr:nth-child(even) {
+  background-color: rgba(65, 65, 65, 0.6);
+}
+
+.rental-table tr:nth-child(odd) {
+  background-color: rgba(122, 122, 122, 0.6);
+}
+
+.rental-table tr:hover {
+  background-color: rgba(26, 25, 25, 0.6);
+}
+
+
+.box {
+  background-color: #18181b;
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  gap: 2rem;
+  padding: 20%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.box h2 {
+    font-size: large;
+    max-width: 75%;
+}
+
+.box p {
+    text-align: justify;
+    font-size: small;
+    color: #ccc;
+    max-width: 75%;
+}
+
+iframe {
+  height: 200px;
+  width: 1200px;
+  max-width: 100%;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    background-color: #111111;
+}
+
+.copyright p {
+    color: #ccc;
+    font-size: small;
+}
+
+.rental-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.rental-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.rental-container  .judul {
+  text-align: center;
+}
+
+
+.rental-form label {
+  font-weight: 500;
+  margin-top: 10px;
+  color: #e4e3e3;
+  display: block;
+}
+
+.rental-form input,
+.rental-form select {
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  color: #ddd;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.rental-form input::placeholder,
+.rental-form select::placeholder {
+  color: #bbb;
+  font-size: 0.9rem;
+}
+
+.rental-form button {
+  margin-top: 30px;
+  padding: 10px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #2545f8;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+}
+
+.rental-form button:hover {
+  background-color: #1527b1;
+}
+
+.rental-form select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.rental-form select:focus {
+  outline: none;
+  border-color: #bbbbbc;
+}
+
+.selected-items {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.item-tag {
+  background-color: #2a2a2a;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.item-tag .remove-item {
+  margin-left: 8px;
+  cursor: pointer;
+  color: red;
+  font-weight: bold;
+}
+
+.limit-warning {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 4px;
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  nav {
+    padding: 1rem 3rem;
+  }
+
+  .image img {
+    display: none;
+  }
+
+  .container {
+    margin-top: 5rem;
+    padding: 4rem 1rem;
+  }
+
+  header {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  header .image img {
+    max-width: 100%;
+  }
+
+  .peralatan-outdoor {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .box {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .box .header {
+    margin: auto;
+  }
+
+  .box p {
+    margin: auto;
+  }
+
+  iframe {
+    height: 300px;
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 0.5rem 2rem;
+    gap: 1rem;
+  }
+
+  .nav-logo img {
+    max-width: 80px;
+  }
+
+  .nav-links {
+    gap: 1rem;
+    
+  }
+
+  .peralatan-outdoor {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  header .content h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .box {
+    margin: auto;
+    padding: 1rem;
+  }
+
+  .box .header {
+    margin: auto;
+  }
+
+  .box p {
+    margin: auto;
+  }
+
+  iframe {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav {
+    padding: 0.5rem 1rem;
+  }
+
+  .nav-links {
+    gap: 0.5rem;
+  }
+
+  .container {
+    margin-top: 10rem;
+  }
+
+  .peralatan-outdoor {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  header .content h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  header .content p {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .box {
+    margin: auto;
+    padding: 0.5rem;
+  }
+
+  .box .header {
+    margin: auto;
+  }
+
+  .box p {
+    margin: auto;
+  }
+
+  iframe {
+    height: 200px;
+  }
+}
